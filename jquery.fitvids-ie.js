@@ -39,6 +39,8 @@
     }
 
     return this.each(function(){
+      var $wrapper = $(this);
+      console.log($wrapper);
       var selectors = [
         "iframe[src*='player.vimeo.com']",
         "iframe[src*='youtube.com']",
@@ -52,7 +54,7 @@
         selectors.push(settings.customSelector);
       }
 
-      var $allVideos = $(this).find(selectors.join(','));
+      var $allVideos = $wrapper.find(selectors.join(','));
       $allVideos = $allVideos.not("object object"); // SwfObj conflict patch
 
       $allVideos.each(function(){
@@ -65,7 +67,7 @@
           var videoID = 'fitvid' + Math.floor(Math.random()*999999);
           $this.attr('id', videoID);
         }
-        $wrapper = $this.closest('.fitvid').addClass('fluid-width-video-wrapper');
+        $wrapper.addClass('fluid-width-video-wrapper');
         $wrapper.css('padding-top', (aspectRatio * 100) + "%");
         $this.removeAttr('height').removeAttr('width');
       });

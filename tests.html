@@ -2,7 +2,7 @@
 <html>
     <head>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Fluid Width Videos with Fitvids.js</title>
+        <title>Fluid Width Videos with Fitvids-ie.js</title>
         <style>
         	body {
             background: #ddd;
@@ -66,12 +66,12 @@
       </div>
 
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-      <script src="jquery.fitvids.js"></script>
+      <script src="jquery.fitvids-ie.js"></script>
       <script>
         // Basic FitVids Test
-        $(".container").fitVids();
+        $(".vendor").fitVids();
         // Custom selector and No-Double-Wrapping Prevention Test
-        $(".container").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
+        $(".vendor").fitVids({ customSelector: "iframe[src^='http://socialcam.com']"});
       </script>
       </body>
   </html>
