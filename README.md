@@ -11,6 +11,8 @@ The problem is explained in this FitVids issue: https://github.com/davatron5000/
 
 More information can be found here: http://msdn.microsoft.com/en-us/library/gg622929%28v=VS.85%29.aspx
 
+The work-around for this problem is to simply not manipulate the iFrame in the DOM and instead add the necessary CSS classes to a pre-existing DIV wrapper.
+
 ## Usage
 
 Setup is as per the original plugin with the subtle extra requirement that each video should be wrapped in an individual div which fitvids will target.
@@ -27,6 +29,10 @@ Setup is as per the original plugin with the subtle extra requirement that each 
 ```javascript
 $(".myvideo").fitVids();
 ```
+
+## Tests
+
+http://rawgithub.com/stephencarr/FitVids.js/fitvids-ie/tests.html
 
 ## Credits
 @ChrisCoyier, @davatron5000, @TrentWalton, @raygunray, @stephencarr
