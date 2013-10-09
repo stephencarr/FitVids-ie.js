@@ -1,7 +1,7 @@
 {
-  "name": "jquery.fitvids",
-  "version": "1.0.2",
-  "main": "./jquery.fitvids.js",
+  "name": "jquery.fitvidsie",
+  "version": "1.0.0",
+  "main": "./jquery.fitvids-ie.js",
   "ignore": [
     "**/.*",
     "node_modules",
