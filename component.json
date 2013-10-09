@@ -1,6 +1,6 @@
 {
   "name": "jquery.fitvidsie",
-  "version": "1.0.0",
+  "version": "v1.0.0-alpha",
   "main": "./jquery.fitvids-ie.js",
   "ignore": [
     "**/.*",
